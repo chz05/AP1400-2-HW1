@@ -1,9 +1,9 @@
 
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
-#include "hw1.h"
+#include "../include/hw1.h"
 
-/*
+
 TEST(HW1Test, ZEROS) {
     Matrix matrix{algebra::zeros(5, 6)};
 
@@ -109,7 +109,7 @@ TEST(HW1Test, MULTIPLY4) {
     EXPECT_NEAR(matrix[1][0], 23, 0.03);
     EXPECT_NEAR(matrix[2][0], 19.3, 0.03);
 }
-
+/*
 TEST(HW1Test, SUM1) {
     // Caution: sum of an empty matrix
     EXPECT_TRUE(algebra::sum(Matrix{}, 1.5).empty());
