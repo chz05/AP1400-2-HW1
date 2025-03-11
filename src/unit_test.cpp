@@ -109,7 +109,7 @@ TEST(HW1Test, MULTIPLY4) {
     EXPECT_NEAR(matrix[1][0], 23, 0.03);
     EXPECT_NEAR(matrix[2][0], 19.3, 0.03);
 }
-/*
+
 TEST(HW1Test, SUM1) {
     // Caution: sum of an empty matrix
     EXPECT_TRUE(algebra::sum(Matrix{}, 1.5).empty());
@@ -155,7 +155,7 @@ TEST(HW1Test, TRANSPOSE) {
     Matrix matrix{algebra::random(3, 5, -2, 5)};
     Matrix transpose = algebra::transpose(matrix);
 
-    // check the size of the matrix
+    //check the size of the matrix
     EXPECT_EQ(transpose.size(), 5);
     EXPECT_EQ(transpose[0].size(), 3);
 
@@ -220,7 +220,7 @@ TEST(HW1Test, INVERSE1) {
     // Caution: non-square matrices have no inverse
     EXPECT_THROW(algebra::inverse(Matrix{{1, 2, 3}, {40, 5, -6}}), std::logic_error);
 
-    // Caution: singular matrices have no inverse
+    //Caution: singular matrices have no inverse
     Matrix non_singular_matrix{{1, 1.5, -1.75, 2}, {2, 2.5, -2.75, 3}, {3, 3.5, -3.75, 4}, {4, 4.5, 4.75, 5}};
     EXPECT_THROW(algebra::inverse(non_singular_matrix), std::logic_error);
 
@@ -360,7 +360,7 @@ TEST(HW1Test, BONUS) {
     EXPECT_NEAR(res2[2][1], 0, 0.03);
     EXPECT_NEAR(res2[2][2], 39/4.0, 0.03);
 }
-*/
+
 
 
 
